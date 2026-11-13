@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Автотесты — Формула</title>
+  <style>
+    body { font: 15px/1.5 system-ui, sans-serif; max-width: 900px; padding: 24px; margin: auto; color: #18243b; }
+    h1 { margin-bottom: 4px; } #summary { font-weight: 700; margin: 16px 0; }
+    #summary.failed { color: #b42338; } #summary.passed { color: #17845c; }
+    ol { padding-left: 26px; } li { padding: 5px 0; } li.pass { color: #17845c; } li.fail { color: #b42338; }
+    li pre { white-space: pre-wrap; font-size: 12px; }
+    iframe { position: absolute; left: -10000px; width: 1100px; height: 850px; border: 0; }
+  </style>
+</head>
+<body>
+  <h1>Автотесты «Формула»</h1>
+  <p>Интеграционные проверки пользовательских сценариев в настоящем браузере. Для запуска требуется интернет (math.js загружается через CDN).</p>
+  <div id="summary" role="status">Загрузка приложения…</div>
+  <ol id="results"></ol>
+  <iframe id="app" src="../index.html" title="Тестируемое приложение"></iframe>
+  <script src="suite.js"></script>
+</body>
+</html>
